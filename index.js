@@ -46,11 +46,6 @@ async function ready() {
 
     return gameOver(pHand, dHand);
   });
-  
-  // document.getElementById("reset").addEventListener("click", () => {
-  //   reset();
-  //   ready();
-  // });
 
   update("Player", pHand);
 }
@@ -59,12 +54,6 @@ async function ready() {
 ready();
 
 //----- below the fold
-
-// function reset() {
-//   const imgStr = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Card_back_02.svg/1000px-Card_back_02.svg.png";
-//   renderCards("Player", R.map(toImage, [{image: imgStr},{image: imgStr}]).join(""));
-//   renderCards("Dealer", R.map(toImage, [{image: imgStr},{image: imgStr}]).join(""));
-// }
 
 // end game, disable buttons, display winner
 function gameOver(pHand, dHand) {
